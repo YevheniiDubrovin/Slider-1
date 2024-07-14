@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="images">
+            <img src="gerakl.jpeg" alt="">
+        </div>
+        <div class="content">
+            <h2>Herakl</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod assumenda est veritatis esse cum rem sapiente. Quisquam, totam.</p>
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="images">
+            <img src="zevs-bog.webp" alt="">
+        </div>
+        <div class="content">
+            <h2>Poseidon</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod assumenda est veritatis esse cum rem sapiente. Quisquam, totam.</p>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="images">
+            <img src="zevs.jpeg" alt="">
+        </div>
+        <div class="content">
+            <h2>Zeus</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod assumenda est veritatis esse cum rem sapiente. Quisquam, totam.</p>
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="images">
+            <img src="David.jpg" alt="">
+        </div>
+        <div class="content">
+            <h2>David</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod assumenda est veritatis esse cum rem sapiente. Quisquam, totam.</p>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="images">
+            <img src="Perseus who defeated Medusa Gorgona.jpg" alt="">
+        </div>
+        <div class="content">
+            <h2>Perseus</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod assumenda est veritatis esse cum rem sapiente. Quisquam, totam.</p>
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="images">
+            <img src="scale_1200.png" alt="">
+        </div>
+        <div class="content">
+            <h2>Hellenistic period</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod assumenda est veritatis esse cum rem sapiente. Quisquam, totam.</p>
+        </div>
+    </div>
+    </div>
+
+
+  </div>
+    <div class="arrow">  
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-button-next">
+        </div>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            grabCursor: true,
+            // cssMode: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+
+            // Navigation arrows
+            navigation: {
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
+            },
+            breakpoints: {
+        420: {
+            slidesPerView: 2,
+        },
+        720: {
+            slidesPerView: 3,
+        }
+    }
+
+});
+    </script>
+</body>
+</html>

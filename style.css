@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-Regular.woff') format('woff'),
+        url('Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Gilroy';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    background: #000;
+    flex-direction: column;
+}
+.swiper {
+    max-width: 960px;
+    width: 100%;
+    height: 400px;
+    padding: 0 20px !important;
+}
+
+
+
+.swiper-slide {
+    background: #0D0D0D;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+  .images {
+    width: 100%;
+    height: 210px;
+  }
+
+  .images img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 1.5rem;
+
+  }
+
+  .content {
+    padding: 1rem 0.5rem;
+  }
+
+  .content p {
+    margin-top: 1rem;
+    font-size: 14px;
+    line-height: 1.25rem;
+    color: #989898;
+  }
+
+.arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.svg {
+    font-size: 14px ;
+}
+
+.prev,
+.next {
+    border: 1px solid #252525;
+    padding: .5rem 1.5rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+position: relative !important;
+margin: 0 !important;
+top: 0 !important;
+text-align: center;
+border: 1px solid #252525;
+padding: .8rem 2rem !important;
+display: flex  !important;
+align-items: center !important;
+justify-content: center !important;
+text-align: center !important;
+width: 100% !important;
+height: 100% !important;
+border-radius: 30px !important;
+}
+
+
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    color: #fff;
+    font-size: 15px !important;
+}
+
+@media (max-width: 720px) {
+    .swiper {
+        width: 600px;
+        height: 370px;
+    }
+    .images {
+        height: 180px;
+      }
+    
+}
+
+@media (max-width: 430px) {
+    .swiper {
+        width: 340px;
+    }
+    
+}
